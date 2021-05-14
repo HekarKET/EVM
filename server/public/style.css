@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.myNav {
+    background-color: black;
+    height: 37px;
+    padding: 17px 10px;
+}
+
+
+.myNav ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: -5px auto;
+}
+
+.myNav ul li {
+    padding: 0px 10px;
+    margin: 0px 12px;
+}
+
+img {
+    height: 50px;
+    width: 100px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right {
+    flex: 0.2;
+}
+
+.main__videos {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__controls {
+    display: flex;
+    background-color: #1c1818;
+    color: #d2d2d2;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.main__controls__block {
+    display: flex;
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__button i {
+    font-size: 24px;
+}
+
+.main__controls_button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    background-color: #242324;
+}
+
+.main__message__container {
+    padding: 22px 12px;
+    display: flex;
+}
+
+.main__message__container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #F5F5F5;
+}
+
+.main__header {
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.main__chat__window {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.messages {
+    color: white;
+}
+
+.leave_event_room {
+    color: red;
+}
+
+.unmute,
+.stop {
+    color: red;
+}
+
+video {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+

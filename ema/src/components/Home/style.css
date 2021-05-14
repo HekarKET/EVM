@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #f144af;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content {
+  width: 70%;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content h1 {
+  text-transform: uppercase;
+  font-family: 'Courgette', cursive;
+  font-size: 65px;
+  color: white;
+}
+
+.main-content p {
+  font-size: 22px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+}
+
+.navbar a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+main .left-content {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  -webkit-transform: translate(0px, 65px);
+          transform: translate(0px, 65px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+main .left-content p:nth-child(1) {
+  font-size: 30px;
+}
+
+main .left-content button {
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 2px;
+  background-color: #f144af;
+}
+
+main .left-content button a {
+  text-decoration: none;
+  color: white;
+}
+
+main .left-content button:hover::after {
+  content: "\2192";
+}
+
+main .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  gap: 15px;
+}
+
+main .right-content .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .right-content .search input {
+  font-size: 20px;
+  border: solid 1px #cec7c7;
+  padding-left: 10px;
+}
+
+main .right-content .search input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+main .right-content .search input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+main .right-content .search input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+main .right-content .search input::placeholder {
+  text-transform: capitalize;
+}
+
+main .right-content .search button {
+  font-size: 18px;
+  padding: 2px;
+  background-color: #f144af;
+  color: white;
+}
+
+main .right-content .recent-event {
+  overflow-y: scroll;
+  border: solid 1px #cec7c7;
+  height: 70vh;
+  width: 100%;
+  border-radius: 12px;
+}
+
+main .right-content .recent-event h2 {
+  text-align: center;
+  position: relative;
+}
+
+
+
+main .right-content .recent-event img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */
