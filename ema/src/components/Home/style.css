@@ -288,7 +288,7 @@ main .container .banner h1 {
   margin-left: 50px;
 }
 
-main .container .banner button {
+main .container .banner button{
   margin-right: 50px;
   padding: 8px 30px 8px 30px;
   background-color: var(--dark-violet);
@@ -298,6 +298,11 @@ main .container .banner button {
   font-weight: 400;
   font-family: var(--main-font);
   border: solid 2px white;
+}
+main .container .banner button a{
+    color: white;
+    text-decoration: none;
+
 }
 
 main .container .banner button:hover {
