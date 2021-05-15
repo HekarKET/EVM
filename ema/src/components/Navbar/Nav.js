@@ -6,7 +6,10 @@ const Nav = () => {
       <nav>
         <div className="container">
           <span className="logo">
-            <strong>EVENT MANAGER</strong>{" "}
+            <strong>
+              {" "}
+              <Link to="/">EVENT MANAGER</Link>
+            </strong>
           </span>
           <ul>
             <li className="nav">
