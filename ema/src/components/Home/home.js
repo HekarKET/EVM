@@ -4,6 +4,7 @@ import snappy_process from "./images/icon-snappy-process.svg";
 import price from './images/icon-affordable-prices.svg'
 import people from './images/icon-people-first.svg'
 import Features from './Features'
+import { Link } from "react-router-dom";
 
 
 
@@ -31,7 +32,9 @@ const Home = () => {
               <a href="http://mydy.dypatil.edu/">Contact us</a>
             </li>
             <li className="nav">
-              <a href="#">About</a>
+              <a href="#">
+                <Link to="/about">About</Link>
+              </a>
             </li>
             <li className="nav">
               <a href="https://github.com/HekarKET/EVM">Source code</a>
