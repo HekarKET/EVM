@@ -32,9 +32,9 @@ const Home = () => {
               <a href="http://mydy.dypatil.edu/">Contact us</a>
             </li>
             <li className="nav">
-              <a href="#">
+              
                 <Link to="/about">About</Link>
-              </a>
+              
             </li>
             <li className="nav">
               <a href="https://github.com/HekarKET/EVM">Source code</a>
