@@ -5,7 +5,7 @@ const Event = ({logo,title,content}) => {
     <React.Fragment>
       <li className="features">
      <span className="feature">
-          <img src={logo} alt="snappy-process"/>
+          <img src={logo} alt={title}/>
           <p>{title}</p>
           <small> {content}
           </small>

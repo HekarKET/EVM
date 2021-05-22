@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-
 import Footer from "./Footer";
 import Features from "./Features";
 import { RecentEvent } from "./recentEvent";
