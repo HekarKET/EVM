@@ -1,28 +1,15 @@
 import React from "react";
 import "./style.css";
-import snappy_process from "./images/icon-snappy-process.svg";
-import price from './images/icon-affordable-prices.svg'
-import people from './images/icon-people-first.svg'
-import Features from './Features'
+
+import Footer from "./Footer";
+import Features from "./Features";
+import { RecentEvent } from "./recentEvent";
+import { content, recentEvent } from "./database";
 import { Link } from "react-router-dom";
 
-
-
-
-
 const Home = () => {
-  const content = [
-    {'id':1,'title':'Snappy Process','content':'Our application process can be    completed in minutes, not hours. Don’t get stuck filling in tedious forms.','img':snappy_process},
-    {'id':2,'title':'Free Prices','content':`We don't want you worrying about high monthly costs. We have free service, but we still offer the best coverage possible`,'img':price},
-    {'id':3,'title':'People First','content':'Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.','img':people}
-  
-  
-  
-  ]
-  
   return (
     <React.Fragment>
-      
       <header>
         <div className="container">
           <div className="content">
@@ -54,7 +41,10 @@ const Home = () => {
       </header>
 
       <main>
+        
+
         <div className="container">
+        
           <h1>We’re different</h1>
           <div className="list-features">
             <ul>
@@ -69,6 +59,21 @@ const Home = () => {
             </ul>
           </div>
 
+          <h1>Recent Events</h1>
+          <div className="recent-event">
+          
+            {recentEvent.map((event) => (
+              <RecentEvent
+                key={event.id}
+                style={event.style}
+                title={event.title}
+                discription={event.description}
+                imgSrc={event.imgSrc}
+              />
+            ))}
+          </div>
+         
+
           <div className="banner">
             <h1> Find out more about how we work</h1>
             <button>
@@ -79,97 +84,7 @@ const Home = () => {
         </div>
       </main>
 
-      <footer>
-        <div className="container">
-          <div className="last">
-            <span className="logo">
-              <strong>EVENT MANAGER</strong>{" "}
-            </span>
-
-            <ul>
-              <li>
-                <i className="fab fa-facebook-square fa-lg"></i>
-              </li>
-              <li>
-                <i className="fab fa-twitter-square fa-lg"></i>
-              </li>
-              <li>
-                <i className="fab fa-github-square fa-lg"></i>
-              </li>
-              <li>
-                <i className="fab fa-instagram-square fa-lg"></i>
-              </li>
-            </ul>
-          </div>
-
-          <hr />
-
-          <ul>
-            <li>
-              <small>Our company</small>
-              <ul>
-                <li>
-                  <small> How we work</small>
-                </li>
-                <li>
-                  <small> Why Insure?</small>
-                </li>
-                <li>
-                  <small> View plans</small>
-                </li>
-                <li>
-                  <small> Reviews</small>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <small> Help me</small>
-              <ul>
-                <li>
-                  <small> FAQ</small>
-                </li>
-                <li>
-                  <small> Terms of use</small>
-                </li>
-                <li>
-                  <small> Privacy policy</small>
-                </li>
-                <li>
-                  <small> Cookies</small>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <small> Contact</small>
-              <ul>
-                <li>
-                  <small> Sales</small>
-                </li>
-                <li>
-                  <small> Support</small>
-                </li>
-                <li>
-                  <small> Live chat</small>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <small> Others</small>
-              <ul>
-                <li>
-                  <small> Careers</small>
-                </li>
-                <li>
-                  <small>Press</small>
-                </li>
-                <li>
-                  <small>Licenses</small>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </React.Fragment>
   );
 };
