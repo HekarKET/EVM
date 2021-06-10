@@ -5,4 +5,8 @@ A login page will appear with Google OAuth 2.0. Users can organize the live stre
 ![image](https://drive.google.com/uc?export=view&id=11arKJ3bA1f7LspSyQ09_pj2Z00LDVWBT)
 
 
-
+Contributors: </br>
+<a href="https://github.com/madhur-nirmal">Madhur nirmal <a/>
+<a href="https://github.com/Divyansh0811"> Divyansh Mishra <a/>
+<a href="https://github.com/HekarKET">Akhilesh Ketkar <a/>
+ 
